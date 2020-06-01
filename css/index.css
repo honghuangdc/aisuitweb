@@ -1,0 +1,271 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 9.27rem;
+  padding: 0 8.02rem 0 7.03rem;
+  background-color: #fbfcfe;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title > img {
+  width: 5.73rem;
+  height: 5.73rem;
+  margin-right: 1.93rem;
+}
+
+.logo-title > span {
+  font-size: 3.75rem;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.android-download, .ios-download {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.android-download {
+  margin-right: 2.92rem;
+}
+
+.download-icon {
+  width: 2.03rem;
+  height: 2.29rem;
+  margin-right: 0.94rem;
+}
+
+.download-text {
+  font-size: 1.56rem;
+}
+
+.qrcode-download {
+  display: none;
+  position: absolute;
+  top: 300%;
+  width: 13.54rem;
+  height: 13.54rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 46.93rem;
+  padding: 0 9.64rem 0 7.81rem;
+  background-color: #6e6c6c;
+}
+
+.qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.52rem;
+}
+
+.suggest-title {
+  font-size: 3.75rem;
+  font-weight: normal;
+  color: #79f6df;
+}
+
+.qrcode > img {
+  width: 10.52rem;
+  height: 10.52rem;
+  margin: 2.81rem 0 1.46rem;
+}
+
+.shop-title {
+  font-size: 1.93rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.banner-body {
+  width: 49.38rem;
+  height: 100%;
+}
+
+.introduce-top, .introduce-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56.46rem;
+  background-color: #fff;
+}
+
+.introduce-top > .introduce-content {
+  margin-left: 8.33rem;
+}
+
+.introduce-bottom > .introduce-content {
+  margin-right: 8.33rem;
+}
+
+.introduce-top > img {
+  width: 19.22rem;
+  height: 36.15rem;
+}
+
+.introduce-bottom > img {
+  width: 17.45rem;
+  height: 34.22rem;
+}
+
+.introduce-content-header {
+  display: flex;
+  align-items: center;
+}
+
+.introduce-content-header > span {
+  font-size: 3.13rem;
+}
+
+.introduce-content-header > img {
+  width: 3.12rem;
+  height: 3.12rem;
+  margin-right: 1.51rem;
+}
+
+.introduce-content-list {
+  margin-top: 4rem;
+}
+
+.introduce-content-list > li {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 4.63rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.introduce-content-list > li::before {
+  position: absolute;
+  left: 0.935rem;
+  top: calc(50% - 0.625rem);
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #627fd8;
+}
+
+.video-container {
+  width: 100%;
+  height: 33.59rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 50rem;
+  height: 28.38rem;
+  /* background-color: #6e6c6c; */
+}
+
+footer {
+  position: relative;
+  padding: 5.1rem 5.1rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 22.71rem;
+  background-color: #bfbbbb;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-info {
+  font-size: 1.875rem;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.company-info > img {
+  width: 2.66rem;
+  height: 2.66rem;
+  margin: 0 1rem 0 4.16rem;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact > img {
+  width: 3.28rem;
+  height: 2.65rem;
+  margin: 0 2.08rem;
+}
+
+.qrcode-weixin {
+  display: none;
+  position: absolute;
+  left: 0;
+  left: -4.36rem;
+  top: 4rem;
+  width: 12rem !important;
+  height: 12rem !important;
+}
+
+.address {
+  font-size: 1.875rem;
+  color: #fff;
+  margin: 0;
+  margin-top: 2.19rem;
+}
+
+.record {
+  position: absolute;
+  left: 29.48rem;
+  bottom: 2.19rem;
+  margin: 0;
+  font-size: 1.56rem;
+  color: #fff;
+}
