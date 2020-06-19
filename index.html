@@ -2,97 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>AiSuit</title>
+  <link rel="icon" type="image/x-ico" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo-title">
-        <img src="./img/logo.png" alt="LOGO">
-        <span>AiSuit</span>
-      </div>
-      <div class="download">
-        <div class="android-download" onmouseenter="showQRcode('android')" onmouseleave="hideQRcode('android')">
-          <img class="download-icon" src="./img/android.png" alt="Android">
-          <span class="download-text">Android下载</span>
-          <img id="android" class="qrcode-download" src="./img/qrcode-android.png" />
+  <strong id="ie">We're sorry but AiSuit can work properly under Google Chrome、Firefox、Safari、edge or IE 10++<br>非常抱歉，艾伊秀需要在谷歌、火狐、Safari、Edge或者IE 10++等浏览器下才能正常显示</strong>
+  <div id="app" class="container">
+    <header class="header center-content-min-width">
+      <div class="header-container center-content-width">
+        <div class="logo-title">
+          <img class="logo" src="./img/logo.png" alt="LOGO">
+          <h1 class="title">AiSuit</h1>
         </div>
-        <div class="ios-download" onmouseenter="showQRcode('ios')" onmouseleave="hideQRcode('ios')">
-          <img class="download-icon" src="./img/ios.png" alt="IOS">
-          <span class="download-text">IOS下载</span>
-          <img id="ios" class="qrcode-download" src="./img/qrcode-ios.png" />
+        <div class="app-download">
+          <div class="download-item" onmouseenter="showQRcode('android')" onmouseleave="hideQRcode('android')">
+            <img class="download-icon" src="./img/android.png" alt="Android">
+            <span class="download-text">Android下载</span>
+            <img id="android" class="qrcode-download" src="./img/qrcode-android.png" />
+          </div>
+          <div class="download-item" onmouseenter="showQRcode('ios')" onmouseleave="hideQRcode('ios')">
+            <img class="download-icon" src="./img/ios.png" alt="Android">
+            <span class="download-text">IOS下载</span>
+            <img id="ios" class="qrcode-download" src="./img/qrcode-ios.png" />
+          </div>
         </div>
       </div>
     </header>
-    <div class="banner">
-      <div class="qrcode">
-        <h3 class="suggest-title">量体，就用艾伊秀</h3>
-        <img src="./img/qrcode-shop.png" alt="店铺二维码">
-        <h3 class="shop-title">AiSuit官店</h3>
-      </div>
-      <img class="banner-body" src="./img/banner.png" alt="banner">
-    </div>
-    <div class="introduce-top">
-      <img src="./img/introduce-top.png" alt="Introduce">
-      <div class="introduce-content">
-        <div class="introduce-content-header">
-          <img src="./img/icon-app.png" alt="APP">
-          <span>APP智能量体</span>
+    <div class="banner center-content-min-width">
+      <div class="banner-container center-content-width">
+        <div class="shop-qrcode">
+          <h3 class="shop-suggestion">量体，就用艾伊秀</h3>
+          <img class="shop-qrcode-img" src="./img/qrcode-shop.png" alt="店铺二维码">
+          <h3 class="shop-name">AiSuit京东旗舰店</h3>
         </div>
-        <ul class="introduce-content-list">
-          <li>全流程语音提示</li>
-          <li>测量时间短至2分钟</li>
-          <li>照片本地处理，保护您的隐私</li>
-        </ul>
+        <img class="banner-img" src="./img/banner.png" alt="Build">
       </div>
     </div>
-    <div class="introduce-bottom">
-      <div class="introduce-content">
-        <div class="introduce-content-header">
-          <img src="./img/icon-book.png" alt="APP">
-          <span>精准身材数据</span>
+    <div class="introduce center-content-min-width">
+      <div class="introduce-container center-content-width">
+        <div class="introduce-top">
+          <img class="introduce-img" src="./img/introduce-top.png" alt="introduce">
+          <div class="introduce-content">
+            <header class="introduce-title">
+              <img src="./img/icon-app.png" alt="APP">
+              <h3>APP智能量体</h3>
+            </header>
+            <ul class="introduce-list">
+              <li>全流程语音提示</li>
+              <li>测量时间短至2分钟</li>
+              <li>照片本地处理，保护您的隐私</li>
+            </ul>
+          </div>
         </div>
-        <ul class="introduce-content-list">
-          <li>多维度身材数据全呈现</li>
-          <li>3D身体建模，还原真实外形</li>
-        </ul>
+        <div class="introduce-bottom">
+          <div class="introduce-content">
+            <header class="introduce-title">
+              <img src="./img/icon-book.png" alt="APP">
+              <h3>精准身材数据</h3>
+            </header>
+            <ul class="introduce-list">
+              <li>多维度身材数据全呈现</li>
+              <li>3D身体建模，还原真实外形</li>
+            </ul>
+          </div>
+          <img class="introduce-img" src="./img/introduce-bottom.png" alt="introduce">
+        </div>
       </div>
-      <img src="./img/introduce-bottom.png" alt="Introduce">
     </div>
-    <div class="video-container">
-      <video class="video" controls>
+    <div class="video center-content-min-width">
+      <video class="video-container" controls>
         <source src="http://118.190.245.58/mov.mp4" type="video/mp4">
       </video>
     </div>
-    <footer>
-      <div class="footer-top">
-        <div class="company-info">
-          <span>深圳市爱智慧科技有限公司</span>
-          <img src="./img/icon-phone.png" alt="Phone">
-          <span>0755-28248002</span>
+    <footer class="footer center-content-min-width">
+      <div class="footer-container center-content-width">
+        <div class="footer-top">
+          <div class="company-info">
+            <span>深圳市爱智慧科技有限公司</span>
+            <img src="./img/icon-phone.png" alt="Phone">
+            <span>0755-28248002</span>
+          </div>
+          <div class="contact">
+            <img src="./img/icon-wechat.png" alt="Wechat" onmouseenter="showQRcode('weixin')" onmouseleave="hideQRcode('weixin')" />
+            <img src="./img/icon-weibo.png" alt="Weibo" />
+            <img id="weixin" class="qrcode-weixin" src="./img/qrcode-weixin.jpg" />
+          </div>
         </div>
-        <div class="contact">
-          <img
-            src="./img/icon-wechat.png"
-            alt="Wechat"
-            onmouseenter="showQRcode('weixin')"
-            onmouseleave="hideQRcode('weixin')"
-          />
-          <img src="./img/icon-weibo.png" alt="Weibo" />
-          <img id="weixin" class="qrcode-weixin" src="./img/qrcode-weixin.jpg" />
-        </div>
+        <p class="address">地址：深圳市龙岗区横岗街道龙岗大道8288号大运软件小镇66栋</p>
+        <p class="record">粤ICP备16077995号-4</p>
       </div>
-      <p class="address">地址：深圳市龙岗区横岗街道龙岗大道8288号大运软件小镇66栋</p>
-      <p class="record">粤ICP备16077995号-4</p>
     </footer>
   </div>
   <script>
-    const html = document.getElementsByTagName('html')[0];
-    const windowWidth = window.innerWidth;
-    console.log('windowWidth: ', windowWidth);
-    html.style.fontSize = windowWidth / 100 + 'px'
+    // IE浏览器兼容性
+    function IEVersion() {
+      var userAgent = navigator.userAgent;
+      var isIE = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1;
+      if (isIE) {
+        var reIE = new RegExp('MSIE (\\d+\\.\\d+);');
+        reIE.test(userAgent);
+        var fIEVersion = parseFloat(RegExp.$1);
+        if (fIEVersion <= 9) {
+          document.getElementById('ie').style.display = 'block';
+          document.getElementById('app').style.display = 'none';
+        }
+      }
+    }
+    IEVersion();
+
+    // 显示隐藏二维码
     function showQRcode(id) {
       document.getElementById(id).style.display = 'block';
     }
